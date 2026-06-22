@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tesla Speak - Submit Feedback</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+}
+
+header{
+    background:#111;
+    padding:25px;
+    text-align:center;
+    border-bottom:3px solid #e82127;
+}
+
+header h1{
+    color:#e82127;
+    font-size:3rem;
+}
+
+header p{
+    color:#fff;
+    margin-top:10px;
+}
+
+.container{
+    max-width:900px;
+    margin:40px auto;
+    background:#111;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(232,33,39,.4);
+}
+
+h2{
+    text-align:center;
+    color:#e82127;
+    margin-bottom:25px;
+}
+
+form{
+    display:grid;
+    gap:18px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:15px;
+    border:2px solid #333;
+    border-radius:8px;
+    background:#fff;
+    color:#000;
+    font-size:16px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border-color:#e82127;
+}
+
+textarea{
+    height:150px;
+    resize:vertical;
+}
+
+button{
+    background:#e82127;
+    color:white;
+    border:none;
+    padding:15px;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#c5161b;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+    background:#111;
+    border-top:3px solid #e82127;
+}
+
+.logo{
+    color:#e82127;
+    font-size:40px;
+    font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">TESLA SPEAK</div>
+    <p>Your Voice. Our Mission.</p>
+</header>
+
+<div class="container">
+
+<h2>Submit Your Feedback</h2>
+
+<form action="https://formsubmit.co/21servage@gmail.com" method="POST" enctype="multipart/form-data">
+
+<input type="text" name="Full Name" placeholder="Full Name" required>
+
+<input type="email" name="Email Address" placeholder="Email Address" required>
+
+<input type="tel" name="Phone Number" placeholder="Phone Number">
+
+<input type="text" name="Country" placeholder="Country">
+
+<select name="Tesla Model">
+<option>Select Tesla Model</option>
+<option>Model S</option>
+<option>Model 3</option>
+<option>Model X</option>
+<option>Model Y</option>
+<option>Cybertruck</option>
+<option>Roadster</option>
+<option>Other</option>
+</select>
+
+<input type="text" name="Subject" placeholder="Subject">
+
+<textarea name="Message" placeholder="Share your experience, ideas or feedback..."></textarea>
+
+<label style="color:white;">Upload Video</label>
+<input type="file" name="Video Upload" accept="video/*">
+
+<button type="submit">Submit Feedback</button>
+
+</form>
+
+</div>
+
+<footer>
+    © 2026 Tesla Speak | Built for Community Feedback
+</footer>
+
+</body>
+</html>
